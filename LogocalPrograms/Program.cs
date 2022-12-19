@@ -15,7 +15,8 @@ namespace LogocalPrograms
                 "Press 2: Perfect Number Program\n" +
                 "Press 3: Prime Number Program\n" +
                 "Press 4: Reverse Number Program\n" +
-                "Press 5: Coupon Number Program\n" );
+                "Press 5: Coupon Number Program\n" +
+                "Press 6: StopWatch Simulation Program\n");
             int options=Convert.ToInt32(Console.ReadLine());
             switch(options) 
             {
@@ -33,6 +34,9 @@ namespace LogocalPrograms
                     break; 
                 case 5:
                     CouponNumber.couponnumber();
+                    break;
+                case 6:
+                    StopWatch.stopwatch();
                     break;
                 default:
                     Console.WriteLine("Please Chose a Valid Option");
