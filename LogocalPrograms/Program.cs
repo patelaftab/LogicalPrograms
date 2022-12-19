@@ -14,7 +14,8 @@ namespace LogocalPrograms
                 "Press 1: Fibonacci Series Program\n" +
                 "Press 2: Perfect Number Program\n" +
                 "Press 3: Prime Number Program\n" +
-                "Press 4: Reverse Number Program\n" );
+                "Press 4: Reverse Number Program\n" +
+                "Press 5: Coupon Number Program\n" );
             int options=Convert.ToInt32(Console.ReadLine());
             switch(options) 
             {
@@ -30,6 +31,9 @@ namespace LogocalPrograms
                 case 4:
                     ReverseNumber.checkingreversenumber();
                     break; 
+                case 5:
+                    CouponNumber.couponnumber();
+                    break;
                 default:
                     Console.WriteLine("Please Chose a Valid Option");
                     break;
