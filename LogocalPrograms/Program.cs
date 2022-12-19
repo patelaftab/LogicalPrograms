@@ -12,7 +12,8 @@ namespace LogocalPrograms
         {
             Console.WriteLine("Welcome To Logical Programs : Please Choose a Option\n" +
                 "Press 1: Fibonacci Series Program\n" +
-                "Press 2: Perfect Number Program");
+                "Press 2: Perfect Number Program\n" +
+                "Press 3: Prime Number Program\n" );
             int options=Convert.ToInt32(Console.ReadLine());
             switch(options) 
             {
@@ -21,6 +22,9 @@ namespace LogocalPrograms
                     break;
                 case 2:
                     PerfectNumber.checkingperfectnumber();
+                    break;
+                case 3:
+                    PrimeNumber.checkingprimenumber();
                     break;
                 default:
                     Console.WriteLine("Please Chose a Valid Option");
